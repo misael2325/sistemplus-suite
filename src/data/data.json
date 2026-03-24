@@ -1,0 +1,2211 @@
+{
+  "config": {
+    "campaignName": "Campaña Zona 10 Vive Sin Temor",
+    "preacher": "Yeury Ferreira",
+    "dateRange": "Del 08 al 13 de Marzo",
+    "zone": "Zona 10",
+    "association": "ACD",
+    "associations": [
+      "ACD",
+      "ADE",
+      "ADS",
+      "AND"
+    ]
+  },
+  "visitors": [
+    {
+      "id": "lrcZpsW7qOVMfw21gP8A",
+      "registrationNumber": "001",
+      "name": "Disael Garcias",
+      "phone": "",
+      "address": "semana anta",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "sGOgt7DHUMQiGGaDsQ3s",
+      "registrationNumber": "002",
+      "name": "Wandy Rodriguez ",
+      "phone": "",
+      "address": "la pared semana santa",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "nzwKvl7R20lQOqSUnmjh",
+      "registrationNumber": "003",
+      "name": "REIYLIN LEBRON",
+      "phone": "829 209 8481",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "F0dy3PVACLaa2M4QDVvM",
+      "registrationNumber": "004",
+      "name": "FREILIN RODRIGUEZ",
+      "phone": "8292062821",
+      "address": "CORTE",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "pSY5SaUtgwIFRpwtr90h",
+      "registrationNumber": "005",
+      "name": "EDGAR GUZMAN",
+      "phone": "8292583870",
+      "address": "LAS MERCEDES",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "52kztggO6MqUQr5ZDBwr",
+      "registrationNumber": "006",
+      "name": "JAIRENY ROMAN",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "E68M34fEHIlxLx0pGVCh",
+      "registrationNumber": "007",
+      "name": "LISANNY REYES",
+      "phone": "8092126592",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "ob7oorjN8l6lveyfH7TM",
+      "registrationNumber": "008",
+      "name": "ADRIZON RODRIGEZ",
+      "phone": "8292923387",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "xyYTpIXTD18Rblmg86au",
+      "registrationNumber": "009",
+      "name": "DAICHA ARIAS",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "z5AwvQVuoOrZJ6TxnsG3",
+      "registrationNumber": "010",
+      "name": "SAMUEL SEPULVEDAS",
+      "phone": "849 588 0218",
+      "address": "",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "BYnI36JkxzGvWfDo0yqU",
+      "registrationNumber": "011",
+      "name": "ALISON RODRIGEZ",
+      "phone": "8092531355",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "PLhGfTOEqT9KQDhIjcot",
+      "registrationNumber": "012",
+      "name": "ROSALBA",
+      "phone": "",
+      "address": "",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "ANtho2m1Gf33bK0AspxZ",
+      "registrationNumber": "013",
+      "name": "ROSALBA",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "2ydtnzKamyw6EQMeejJo",
+      "registrationNumber": "014",
+      "name": "AMBIORIS",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "WFoqp73d7QXAvd30oBgs",
+      "registrationNumber": "015",
+      "name": "NILOLE",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "2ho3sQIVjdJI10odpEJC",
+      "registrationNumber": "016",
+      "name": "BRAILIN",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "kwvN5QMEcPz0m4K2L6gH",
+      "registrationNumber": "017",
+      "name": "JUAN MARCOS",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "HWBWOREKPDO0qhuwmXdT",
+      "registrationNumber": "018",
+      "name": "ALEXANDER",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "AAuheuQoKlSbyp6pV9J3",
+      "registrationNumber": "019",
+      "name": "ALEXANDER",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "yS9domn1tA4eIMpqtLD1",
+      "registrationNumber": "020",
+      "name": "ANTONIO",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "dJKqfXJDjTzXQHu2uQK7",
+      "registrationNumber": "021",
+      "name": "JUANCER",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "jRdY9DiYB3NTrEdJRW4F",
+      "registrationNumber": "022",
+      "name": "BRAYAN",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "AdBY2HYPrNmEouVhqkTh",
+      "registrationNumber": "023",
+      "name": "JESUS",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "13h15L25qn2ZRdOvoZzH",
+      "registrationNumber": "024",
+      "name": "JOSIAS",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "y524FoN8586yhiBtBsCc",
+      "registrationNumber": "025",
+      "name": "MARIANA",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "tr696TJQ27rxdjlAUIeN",
+      "registrationNumber": "026",
+      "name": "ANA",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "FwLETczsq00fx7m3Cf1s",
+      "registrationNumber": "027",
+      "name": "DEILYN RODRIGUEZ",
+      "phone": "849-361-3086",
+      "address": "CORTE",
+      "attendance": [
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "jGSUiwjL3Ih2ji1Ouyhg",
+      "registrationNumber": "028",
+      "name": "VINCEL ROSARIO",
+      "phone": "829-621-5919",
+      "address": "EL CORTE",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "eDYd4eNTiFCS3cpRTpMX",
+      "registrationNumber": "029",
+      "name": "ESTEILIN RODRIGUEZ",
+      "phone": "849-499-9086",
+      "address": "EL CORTE ",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "3vMFy4lGXVpZ4lvzws7t",
+      "registrationNumber": "030",
+      "name": "DANNELIS DE LA CRUZ",
+      "phone": "809-478-8891",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "XPSQBZsU4tVj9Fk8xPDA",
+      "registrationNumber": "031",
+      "name": "ALBIN CABRAL ",
+      "phone": "829-972-2335",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "u2w3xlqDthyjJO9p8XjR",
+      "registrationNumber": "032",
+      "name": "YEFERSON",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "X1YurakEAcDZ0YJbQJVY",
+      "registrationNumber": "033",
+      "name": "ORLENI",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "zzl2w6DgehSbWTxUfWrk",
+      "registrationNumber": "034",
+      "name": "JOSE FERNANDEZ",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "BwCG5AsbO9SOOUT3TS2T",
+      "registrationNumber": "035",
+      "name": "KENY SAMUEL ",
+      "phone": "829-852-9533",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "toaRZQc9hUI8fqCPtXCo",
+      "registrationNumber": "036",
+      "name": "DAVID SORIANO",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "F9bjlkdkr6WSCGh1XAl1",
+      "registrationNumber": "037",
+      "name": "MATHIW (ADRISON)",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "nz9TlWBbKrRomXvHKNKW",
+      "registrationNumber": "038",
+      "name": "YEIRELL VERAS CASILLA",
+      "phone": "849-480-9098",
+      "address": "LA PEÑA",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "iegvFQIEcmJhkQDf0jy9",
+      "registrationNumber": "039",
+      "name": "DARIELIS GARCIA",
+      "phone": "809-207-9484",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "DJS00wwrlN0M5WZE7Ja7",
+      "registrationNumber": "040",
+      "name": "BEATRIS ",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "dzZ3PABEPU17wToun1Hv",
+      "registrationNumber": "041",
+      "name": "DANIELA",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "a512m8iN6zVQvRuclcxB",
+      "registrationNumber": "042",
+      "name": "AMBIORIS",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "VVsSSRLMOptOhy6VvDUV",
+      "registrationNumber": "043",
+      "name": "NICOLE",
+      "phone": "",
+      "address": "YAGUATE",
+      "attendance": [
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "1l27EhrkIcdRtkd1tIHm",
+      "registrationNumber": "044",
+      "name": "LISNEL",
+      "phone": "8293576873",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "5jgEg6PBglu6N3JowQvH",
+      "registrationNumber": "045",
+      "name": "DEILIN RODRIGEZ",
+      "phone": "",
+      "address": "CORTE",
+      "attendance": [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "WCYgK10VaWBh3sbzAcMI",
+      "registrationNumber": "046",
+      "name": "SHASMEL",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "ar4ir3yOBE5dDveB5F9F",
+      "registrationNumber": "047",
+      "name": "ALESKA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "uXx2zji5LnwC81IKhFPn",
+      "registrationNumber": "048",
+      "name": "YASMEILIN",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "IXOpzWxhbaVmK3YnTBTM",
+      "registrationNumber": "049",
+      "name": "ESMERALDA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "4dVM9OW4d0OrtQLnWiIg",
+      "registrationNumber": "050",
+      "name": "YURIANDRI",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "Rc8usXMY1RMcznfvobHO",
+      "registrationNumber": "051",
+      "name": "SIOMAIRI",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "YMRvRCfP1iMdyIAANuWt",
+      "registrationNumber": "052",
+      "name": "ELKI AMADOR",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "FypZvrrDPk8r9PxPdGWQ",
+      "registrationNumber": "053",
+      "name": "ENYEL GUZMAN",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "yK5380n4YtzOng31pwWm",
+      "registrationNumber": "054",
+      "name": "FRANCIS GUZMAN",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "1OiuUmCi9ycT5crxjJQW",
+      "registrationNumber": "055",
+      "name": "DARIEL ",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-11T19:49:56.300Z"
+    },
+    {
+      "id": "94ddb9f0-4e16-41c2-a401-a1187656275d",
+      "registrationNumber": "056",
+      "name": "yenifer ",
+      "phone": "",
+      "address": "semana santa",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:13:29.326Z"
+    },
+    {
+      "id": "bb4d90c5-edfa-4154-a9ce-946e95bd1212",
+      "registrationNumber": "057",
+      "name": "Liamailyn lorenzo ",
+      "phone": "",
+      "address": "semana santa",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:14:06.256Z"
+    },
+    {
+      "id": "7fa7937b-07b2-41b2-8fd7-00c268007776",
+      "registrationNumber": "058",
+      "name": "SAMUEL ",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:21:13.223Z"
+    },
+    {
+      "id": "4835d7b3-318d-48e3-a31d-a6834e748882",
+      "registrationNumber": "059",
+      "name": "ADRIAN",
+      "phone": "MANA",
+      "address": "",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:21:35.319Z"
+    },
+    {
+      "id": "062432b5-af79-4832-98ed-4a73c1fb397b",
+      "registrationNumber": "060",
+      "name": "ROBISON",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:22:10.586Z"
+    },
+    {
+      "id": "ae7dd275-99c3-4a53-9b6c-1c400c8673d9",
+      "registrationNumber": "061",
+      "name": "CRISTHOFER",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:22:44.786Z"
+    },
+    {
+      "id": "4a220122-0353-4c36-902b-85bd92f6f6e1",
+      "registrationNumber": "062",
+      "name": "JOSEFINA",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:23:09.035Z"
+    },
+    {
+      "id": "17388af2-58bd-44c6-b76d-b287a5117ab8",
+      "registrationNumber": "063",
+      "name": "ESTEBAN",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:23:38.020Z"
+    },
+    {
+      "id": "78435266-fb53-4962-9436-d156426237cb",
+      "registrationNumber": "064",
+      "name": "MARIELA",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:24:02.718Z"
+    },
+    {
+      "id": "220d6a39-2f6e-4ee7-98ed-e1c84e556b40",
+      "registrationNumber": "065",
+      "name": "MARIA",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:24:49.014Z"
+    },
+    {
+      "id": "a587181e-1b1b-42be-861f-3a2e66f16b79",
+      "registrationNumber": "066",
+      "name": "ISABEL",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:25:10.501Z"
+    },
+    {
+      "id": "d4405c5c-7eca-4aca-8519-f21a3b75d50a",
+      "registrationNumber": "067",
+      "name": "ALONDRA",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:25:37.201Z"
+    },
+    {
+      "id": "1978ba02-1c71-4bde-aa3d-e825776d1992",
+      "registrationNumber": "068",
+      "name": "RIKI",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:25:55.751Z"
+    },
+    {
+      "id": "599cd97b-d658-4d24-b1cb-326f40cde400",
+      "registrationNumber": "069",
+      "name": "ANGEL",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:26:14.734Z"
+    },
+    {
+      "id": "24d88be3-7b06-42b1-b7c8-92a673dcb9ed",
+      "registrationNumber": "070",
+      "name": "ANGEL",
+      "phone": "",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:26:36.817Z"
+    },
+    {
+      "id": "6d65b6f0-dd26-4f6d-8c60-905207447ae4",
+      "registrationNumber": "071",
+      "name": "ALISON",
+      "phone": "",
+      "address": "semana santa",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:27:07.700Z"
+    },
+    {
+      "id": "4e99ca0e-4fd1-4a43-9e07-436bc3c2e75a",
+      "registrationNumber": "072",
+      "name": "ESTEISI",
+      "phone": "",
+      "address": "semana santa",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:27:53.433Z"
+    },
+    {
+      "id": "5e620c01-144f-4822-800b-4ad96262e230",
+      "registrationNumber": "073",
+      "name": "KENYA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:28:34.716Z"
+    },
+    {
+      "id": "2565fb92-0449-4875-9ec4-ce714aed9b20",
+      "registrationNumber": "074",
+      "name": "MELLA ARRIBA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:29:07.083Z"
+    },
+    {
+      "id": "139fc18c-be74-43e1-84d0-fce7e0e01c42",
+      "registrationNumber": "075",
+      "name": "KENIA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:29:27.916Z"
+    },
+    {
+      "id": "cbdbcb1b-2c76-46c6-8d07-344d36c1bab7",
+      "registrationNumber": "076",
+      "name": "KEIRIS",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:29:55.762Z"
+    },
+    {
+      "id": "d1d13074-7dc1-429b-ba2e-7c00e7b4b987",
+      "registrationNumber": "077",
+      "name": "JENIFER",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:30:16.866Z"
+    },
+    {
+      "id": "170805fe-9a0a-45fc-a606-396b327bfd04",
+      "registrationNumber": "078",
+      "name": "DAYELIS",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:30:47.615Z"
+    },
+    {
+      "id": "bb525a30-c11b-45fa-849d-fc809f6802e0",
+      "registrationNumber": "079",
+      "name": "VIVIANA",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:31:10.265Z"
+    },
+    {
+      "id": "46d652e7-5e0c-4aed-a4ff-5514e2a22d7c",
+      "registrationNumber": "080",
+      "name": "SAUDY",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:31:41.165Z"
+    },
+    {
+      "id": "ced46796-2145-4aee-a2c2-c270ae8d1d33",
+      "registrationNumber": "081",
+      "name": "YARIEL",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:32:17.965Z"
+    },
+    {
+      "id": "2ef28c25-14c2-43bb-b284-974d98f9fbe3",
+      "registrationNumber": "082",
+      "name": "WANDY",
+      "phone": "",
+      "address": "SEMANA SANTA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:33:02.381Z"
+    },
+    {
+      "id": "f329a194-1b13-48a4-af7c-bbac95eee848",
+      "registrationNumber": "083",
+      "name": "ARIELINA REYES ",
+      "phone": "MARIELA ",
+      "address": "MANA",
+      "attendance": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "llamados": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      "createdAt": "2026-03-13T00:48:19.159Z"
+    }
+  ],
+  "marketTech": {
+    "models": [
+      {
+        "id": "m1",
+        "name": "iPhone 15 Pro Max",
+        "brand": "Apple",
+        "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?q=80&w=800&auto=format&fit=crop"
+      },
+      {
+        "id": "m2",
+        "name": "Galaxy S24 Ultra",
+        "brand": "Samsung",
+        "image": "https://images.unsplash.com/photo-1707148785942-5369658097d9?q=80&w=800&auto=format&fit=crop"
+      }
+    ],
+    "devices": [
+      {
+        "id": "d1",
+        "modelId": "m1",
+        "unitNumber": 1,
+        "capacity": "256GB",
+        "batteryGrade": "A",
+        "condition": "Como Nuevo",
+        "price": 950
+      },
+      {
+        "id": "d2",
+        "modelId": "m2",
+        "unitNumber": 1,
+        "capacity": "512GB",
+        "batteryGrade": "A",
+        "condition": "Como Nuevo",
+        "price": 1050
+      }
+    ]
+  }
+}
