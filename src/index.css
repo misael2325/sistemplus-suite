@@ -530,3 +530,16 @@ tr:hover td {
   .view-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .search-bar input { width: 100%; }
 }
+
+.progress-bar::-webkit-progress-value {
+  background-color: #0c7ff2;
+  border-radius: 0.25rem;
+}
+.progress-bar::-webkit-progress-bar {
+  background-color: #e5e7eb;
+  border-radius: 0.25rem;
+}
+.progress-bar::-moz-progress-bar {
+  background-color: #0c7ff2;
+  border-radius: 0.25rem;
+}
