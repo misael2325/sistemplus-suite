@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float km = 100;
+    float litros = 5;
+
+    float consumo = km / litros;
+
+    cout << "Consumo: " << consumo << " km/l" << endl;
+
+    return 0;
+}
+

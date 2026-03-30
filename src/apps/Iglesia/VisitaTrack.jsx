@@ -56,22 +56,6 @@ function VisitaTrack({ onBack }) {
     }))
   }
 
-  const toggleLlamado = (visitorId) => {
-    setVisitors(prev => prev.map(v => {
-      if (v.id === visitorId) {
-        const hasAny = v.llamados.some(l => l)
-        return { ...v, llamados: v.llamados.map(() => !hasAny) }
-      }
-      return v
-    }))
-  }
-
-  const deleteVisitor = (id) => {
-    if (window.confirm('¿Estás seguro de que deseas eliminar este visitante?')) {
-      setVisitors(prev => prev.filter(v => v.id !== id))
-    }
-  }
-
   const handleSaveVisitor = (e) => {
     e.preventDefault()
     const formData = new FormData(e.target)
@@ -95,104 +79,68 @@ function VisitaTrack({ onBack }) {
     setEditingVisitor(null)
   }
 
-  const downloadBackup = () => {
-    const dataStr = JSON.stringify({ config, visitors }, null, 2)
-    const blob = new Blob([dataStr], { type: 'application/json' })
-    const url = URL.createObjectURL(blob)
-    const link = document.createElement('a')
-    link.href = url
-    link.download = `visitatrack_backup_${new Date().toISOString().split('T')[0]}.json`
-    link.click()
-    URL.revokeObjectURL(url)
-  }
-
-  const exportCSV = () => {
-    const headers = ['Registro', 'Nombre', 'Teléfono', 'Dirección', 'Asistencia Martes-Sabado', 'Llamados']
-    const rows = visitors.map(v => [
-      v.registrationNumber,
-      v.name,
-      v.phone || '',
-      v.address || '',
-      v.attendance.map(a => a ? 'X' : '').join(','),
-      v.llamados.some(l => l) ? 'SÍ' : 'NO'
-    ])
-    const csvContent = "data:text/csv;charset=utf-8," + [headers, ...rows].map(e => e.join(",")).join("\n")
-    const link = document.createElement('a')
-    link.setAttribute("href", encodeURI(csvContent))
-    link.setAttribute("download", "reporte_visitantes.csv")
-    link.click()
-  }
-
-  const handleFileUpload = (e) => {
-    const file = e.target.files[0]
-    if (!file) return
-    const reader = new FileReader()
-    reader.onload = (event) => {
-      try {
-        const json = JSON.parse(event.target.result)
-        if (json.config && json.visitors) {
-          if (window.confirm('¿Deseas restaurar este backup? Sobrescribirá los datos actuales.')) {
-            setConfig(json.config)
-            setVisitors(json.visitors)
-            alert('Backup restaurado con éxito.')
-          }
-        } else {
-          alert('Formato de archivo no válido.')
-        }
-      } catch (err) {
-        alert('Error al leer el archivo JSON.')
-      }
-    }
-    reader.readAsText(file)
-  }
-
   const nextRegNum = useMemo(() => {
     const nums = visitors.map(v => parseInt(v.registrationNumber)).filter(n => !isNaN(n))
     const max = nums.length > 0 ? Math.max(...nums) : 0
     return String(max + 1).padStart(3, '0')
   }, [visitors])
 
+  const deleteVisitor = (id) => {
+    if (window.confirm('¿Eliminar este registro?')) {
+      setVisitors(prev => prev.filter(v => v.id !== id))
+    }
+  }
+
   return (
     <div className="app-container">
-      <nav className="sidebar">
+      <aside className="sidebar">
         <div className="sidebar-logo" onClick={onBack} style={{ cursor: 'pointer' }}>
-          <span className="logo-icon">💠</span>
-          <span className="logo-text">Suite Portal</span>
+          <span className="material-icons" style={{ color: 'var(--primary)' }}>church</span>
+          <span className="logo-text">VisitaTrack</span>
         </div>
+        
         <div className="sidebar-app-name">
-           <span className="logo-icon">⛪</span>
-           <span className="logo-text">VisitaTrack</span>
+          <span className="material-icons">diversity_3</span>
+          <span>Gestión Iglesia</span>
         </div>
-        <ul className="nav-links">
+
+        <nav className="nav-links">
           <li className={activeTab === 'dashboard' ? 'active' : ''} onClick={() => setActiveTab('dashboard')}>
-            <span className="nav-icon">📊</span> <span className="nav-text">Dashboard</span>
+            <span className="material-icons nav-icon">dashboard</span>
+            <span className="nav-text">Dashboard</span>
           </li>
           <li className={activeTab === 'registro' ? 'active' : ''} onClick={() => setActiveTab('registro')}>
-            <span className="nav-icon">📝</span> <span className="nav-text">Registro</span>
-          </li>
-          <li className={activeTab === 'calls' ? 'active' : ''} onClick={() => setActiveTab('calls')}>
-            <span className="nav-icon">📞</span> <span className="nav-text">Llamados</span>
+            <span className="material-icons nav-icon">person_add</span>
+            <span className="nav-text">Registro</span>
           </li>
           <li className={activeTab === 'config' ? 'active' : ''} onClick={() => setActiveTab('config')}>
-            <span className="nav-icon">⚙️</span> <span className="nav-text">Configuración</span>
+            <span className="material-icons nav-icon">settings</span>
+            <span className="nav-text">Configuración</span>
           </li>
-        </ul>
-        <div className="sidebar-footer">
-          <p>VisitaTrack v3.0</p>
+          <li onClick={onBack}>
+            <span className="material-icons nav-icon">arrow_back</span>
+            <span className="nav-text">Portal</span>
+          </li>
+        </nav>
+        
+        <div className="sidebar-footer" style={{ marginTop: 'auto', fontSize: '0.8rem', color: 'var(--text-muted)' }}>
+          Suite Iglesia v3.1
         </div>
-      </nav>
+      </aside>
 
       <main className="main-content">
         {activeTab === 'dashboard' && (
           <div className="view">
             <header className="view-header">
-              <h1>Campaña: {config.campaignName}</h1>
-              <p>Métricas clave y resumen de impacto.</p>
+              <div>
+                <h1>{config.campaignName}</h1>
+                <p>Métricas clave de la campaña actual en {config.zone}</p>
+              </div>
             </header>
             
             <div className="stats-grid">
               <div className="stat-card">
-                <div className="stat-title">Visitantes</div>
+                <div className="stat-title">Total Visitantes</div>
                 <div className="stat-value">{stats.total}</div>
               </div>
               <div className="stat-card">
@@ -200,22 +148,30 @@ function VisitaTrack({ onBack }) {
                 <div className="stat-value">{stats.registrados}</div>
               </div>
               <div className="stat-card">
-                <div className="stat-title">Llamados</div>
+                <div className="stat-title">Llamados Realizados</div>
                 <div className="stat-value">{stats.llamados}</div>
               </div>
               <div className="stat-card">
-                <div className="stat-title">Asistencia</div>
+                <div className="stat-title">Asistencia Media</div>
                 <div className="stat-value">{stats.avg}%</div>
               </div>
             </div>
 
-            <div className="config-card full-width">
-              <h3 style={{ marginBottom: '1.5rem', color: '#fff' }}>Detalles de la Campaña</h3>
-              <div className="form-row" style={{ color: 'var(--text-muted)' }}>
-                <div><strong>Predicador:</strong> {config.preacher}</div>
-                <div><strong>Zona:</strong> {config.zone}</div>
-                <div><strong>Asociación:</strong> {config.association}</div>
-                <div><strong>Fechas:</strong> {config.dateRange}</div>
+            <div className="table-container" style={{ padding: '2rem' }}>
+              <h3 style={{ marginBottom: '1.5rem' }}>Detalles de la Campaña</h3>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
+                <div>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', fontWeight: 700 }}>Predicador</p>
+                  <p style={{ fontWeight: 700, fontSize: '1.1rem' }}>{config.preacher}</p>
+                </div>
+                <div>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', fontWeight: 700 }}>Asociación</p>
+                  <p style={{ fontWeight: 700, fontSize: '1.1rem' }}>{config.association}</p>
+                </div>
+                <div>
+                  <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', fontWeight: 700 }}>Rango de Fechas</p>
+                  <p style={{ fontWeight: 700, fontSize: '1.1rem' }}>{config.dateRange}</p>
+                </div>
               </div>
             </div>
           </div>
@@ -224,19 +180,20 @@ function VisitaTrack({ onBack }) {
         {activeTab === 'registro' && (
           <div className="view">
             <header className="view-header">
-              <div className="header-left">
+              <div>
                 <h1>Registro Maestro</h1>
-                <div className="search-bar" style={{ marginTop: '1rem' }}>
+                <div className="search-bar" style={{ marginTop: '1.5rem' }}>
                   <input 
                     type="text" 
-                    placeholder="Buscar..." 
+                    placeholder="Buscar por nombre o ID..." 
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                   />
                 </div>
               </div>
               <button className="btn-primary" onClick={() => { setEditingVisitor(null); setIsModalOpen(true); }}>
-                + Nuevo Registro
+                <span className="material-icons" style={{ verticalAlign: 'middle', marginRight: '8px' }}>add</span>
+                Nuevo Visitante
               </button>
             </header>
 
@@ -245,9 +202,9 @@ function VisitaTrack({ onBack }) {
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th>Nombre / Dirección</th>
+                    <th>Nombre y Dirección</th>
                     <th>Teléfono</th>
-                    <th>Asistencia</th>
+                    <th>Asistencia (7 días)</th>
                     <th>Acción</th>
                   </tr>
                 </thead>
@@ -256,25 +213,38 @@ function VisitaTrack({ onBack }) {
                     <tr key={v.id}>
                       <td className="col-reg">{v.registrationNumber}</td>
                       <td>
-                        <div className="name">{v.name}</div>
-                        <div style={{ fontSize: '0.85rem', color: 'var(--text-dim)' }}>{v.address || 'Sin dirección'}</div>
+                        <div style={{ fontWeight: 800, fontSize: '1.1rem' }}>{v.name}</div>
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>{v.address || 'Chile #...' }</div>
                       </td>
-                      <td style={{ color: 'var(--text-muted)' }}>{v.phone || '---'}</td>
+                      <td>{v.phone || '---'}</td>
                       <td>
-                        <div className="dots-container">
+                        <div style={{ display: 'flex', gap: '0.5rem' }}>
                           {v.attendance.map((a, i) => (
                             <div 
                               key={i} 
-                              className={`dot ${a ? 'active' : ''}`} 
                               onClick={() => toggleAttendance(v.id, i)}
+                              style={{ 
+                                width: '12px', 
+                                height: '24px', 
+                                borderRadius: '4px',
+                                background: a ? 'var(--primary)' : 'var(--border-main)',
+                                cursor: 'pointer',
+                                transition: 'var(--transition)'
+                              }}
                               title={`Día ${i+1}`}
                             />
                           ))}
                         </div>
                       </td>
                       <td>
-                        <button style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem', marginRight: '0.5rem' }} onClick={() => { setEditingVisitor(v); setIsModalOpen(true); }}>✏️</button>
-                        <button style={{ background: 'none', border: 'none', cursor: 'pointer', fontSize: '1.2rem' }} onClick={() => deleteVisitor(v.id)}>🗑️</button>
+                        <div style={{ display: 'flex', gap: '0.5rem' }}>
+                          <button className="btn-secondary" style={{ padding: '0.5rem' }} onClick={() => { setEditingVisitor(v); setIsModalOpen(true); }}>
+                             <span className="material-icons" style={{ fontSize: '1.2rem' }}>edit</span>
+                          </button>
+                          <button className="btn-secondary" style={{ padding: '0.5rem', color: 'var(--danger)' }} onClick={() => deleteVisitor(v.id)}>
+                             <span className="material-icons" style={{ fontSize: '1.2rem' }}>delete</span>
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -284,37 +254,60 @@ function VisitaTrack({ onBack }) {
           </div>
         )}
 
-        {/* Similar updates for calls and config... */}
-        {(activeTab === 'calls' || activeTab === 'config') && (
-           <div className="view">
+        {activeTab === 'config' && (
+          <div className="view">
              <header className="view-header">
-               <h1>{activeTab === 'calls' ? 'Seguimiento de Llamadas' : 'Configuración'}</h1>
-               <p>{activeTab === 'calls' ? 'Gestión de contactos y cierres.' : 'Ajustes del sistema y copias de seguridad.'}</p>
+                <div>
+                  <h1>Configuración</h1>
+                  <p>Ajustes globales y gestión de datos</p>
+                </div>
              </header>
-             <div className="empty-msg">
-                <h2 style={{ color: '#fff' }}>Sección en Rediseño</h2>
-                <p>Estamos aplicando el nuevo estilo visual a esta área.</p>
+             <div className="sub-grid">
+                <div className="portal-card" style={{ cursor: 'default' }}>
+                   <span className="material-icons card-icon">cloud_download</span>
+                   <div className="card-content">
+                      <h3>Copia de Seguridad</h3>
+                      <p>Descarga todos los datos actuales en formato JSON para respaldo.</p>
+                      <button className="btn-primary" style={{ marginTop: '1rem', width: '100%' }}>Descargar Backup</button>
+                   </div>
+                </div>
+                <div className="portal-card" style={{ cursor: 'default' }}>
+                   <span className="material-icons card-icon">cloud_upload</span>
+                   <div className="card-content">
+                      <h3>Restaurar Datos</h3>
+                      <p>Sube un archivo de respaldo previo para restaurar el sistema.</p>
+                      <button className="btn-secondary" style={{ marginTop: '1rem', width: '100%' }}>Subir Archivo</button>
+                   </div>
+                </div>
              </div>
-           </div>
+          </div>
         )}
       </main>
 
       {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal">
-            <h2 style={{ marginBottom: '2rem', color: '#fff' }}>{editingVisitor ? 'Editar Datos' : 'Registrar Nuevo'}</h2>
-            <form onSubmit={handleSaveVisitor} className="config-form">
-              <div className="form-group">
-                <label>Num. Registro</label>
-                <input name="regNum" defaultValue={editingVisitor?.registrationNumber || nextRegNum} required />
+        <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <h2 style={{ marginBottom: '2rem' }}>{editingVisitor ? 'Editar Visitante' : 'Nuevo Registro'}</h2>
+            <form onSubmit={handleSaveVisitor} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              <div className="search-bar" style={{ width: '100%' }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 700 }}>Número de Registro</label>
+                <input name="regNum" style={{ width: '100%' }} defaultValue={editingVisitor?.registrationNumber || nextRegNum} required />
               </div>
-              <div className="form-group">
-                <label>Nombre Completo</label>
-                <input name="name" defaultValue={editingVisitor?.name} required />
+              <div className="search-bar" style={{ width: '100%' }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 700 }}>Nombre Completo</label>
+                <input name="name" style={{ width: '100%' }} defaultValue={editingVisitor?.name} required />
               </div>
-              <div className="modal-actions">
-                <button type="button" className="btn-secondary" onClick={() => setIsModalOpen(false)}>Cancelar</button>
-                <button type="submit" className="btn-primary">Guardar Cambios</button>
+              <div className="search-bar" style={{ width: '100%' }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 700 }}>Teléfono</label>
+                <input name="phone" style={{ width: '100%' }} defaultValue={editingVisitor?.phone} />
+              </div>
+              <div className="search-bar" style={{ width: '100%' }}>
+                <label style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 700 }}>Dirección</label>
+                <input name="address" style={{ width: '100%' }} defaultValue={editingVisitor?.address} />
+              </div>
+              <div style={{ display: 'flex', gap: '1rem', marginTop: '1rem' }}>
+                <button type="submit" className="btn-primary" style={{ flex: 1 }}>Guardar</button>
+                <button type="button" className="btn-secondary" onClick={() => setIsModalOpen(false)} style={{ flex: 1 }}>Cancelar</button>
               </div>
             </form>
           </div>

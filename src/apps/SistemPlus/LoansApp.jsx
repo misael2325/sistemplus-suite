@@ -1,34 +1,43 @@
 function LoansApp({ onBack }) {
   return (
     <div className="app-container">
-      <nav className="sidebar">
+      <aside className="sidebar">
         <div className="sidebar-logo" onClick={onBack} style={{ cursor: 'pointer' }}>
-          <span className="logo-icon">💠</span>
-          <span className="logo-text">Suite Portal</span>
+          <span className="material-icons" style={{ color: 'var(--primary)' }}>account_balance</span>
+          <span className="logo-text">Suite Préstamos</span>
         </div>
         <div className="sidebar-app-name">
-           <span className="logo-icon">💰</span>
-           <span className="logo-text">Préstamos</span>
+          <span className="material-icons">payments</span>
+          <span>Créditos</span>
         </div>
-        <ul className="nav-links">
-          <li className="active"><span className="nav-icon">📈</span> <span className="nav-text">Cartera</span></li>
-          <li><span className="nav-icon">📅</span> <span className="nav-text">Pagos</span></li>
-          <li><span className="nav-icon">⚖️</span> <span className="nav-text">Riesgo</span></li>
-          <li><span className="nav-icon">📁</span> <span className="nav-text">Historial</span></li>
-        </ul>
-      </nav>
+        <nav className="nav-links">
+          <li className="active">
+            <span className="material-icons nav-icon">group</span>
+            <span className="nav-text">Clientes</span>
+          </li>
+          <li>
+            <span className="material-icons nav-icon">history_edu</span>
+            <span className="nav-text">Pagos</span>
+          </li>
+          <li onClick={onBack}>
+            <span className="material-icons nav-icon">arrow_back</span>
+            <span className="nav-text">Portal</span>
+          </li>
+        </nav>
+      </aside>
+
       <main className="main-content">
         <header className="view-header">
-          <h1>Sistema de Préstamos</h1>
-          <p>Visibilidad total sobre tus activos y retornos.</p>
+          <h1>Control de Préstamos</h1>
+          <p>Gestión eficiente de carteras y cronogramas de pago.</p>
         </header>
-        <div className="empty-msg">
-          <div style={{ fontSize: '5rem', marginBottom: '1.5rem', filter: 'drop-shadow(0 0 20px rgba(139, 92, 246, 0.4))' }}>🏛️</div>
-          <h2 style={{ color: '#fff', fontSize: '2rem' }}>Módulo en Construcción</h2>
-          <p style={{ fontSize: '1.1rem' }}>Implementando algoritmos de amortización y cobranzas.</p>
+        <div className="portal-card" style={{ padding: '5rem', textAlign: 'center', cursor: 'default' }}>
+          <span className="material-icons" style={{ fontSize: '8rem', color: 'var(--border-main)', marginBottom: '2rem' }}>monetization_on</span>
+          <h2>Módulo en Desarrollo</h2>
+          <p>Próximamente: Calculadora de intereses y reportes de mora.</p>
         </div>
       </main>
     </div>
   )
 }
-export default LoansApp
+export default LoansApp;

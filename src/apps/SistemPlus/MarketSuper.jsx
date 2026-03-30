@@ -1,34 +1,43 @@
 function MarketSuper({ onBack }) {
   return (
     <div className="app-container">
-      <nav className="sidebar">
+      <aside className="sidebar">
         <div className="sidebar-logo" onClick={onBack} style={{ cursor: 'pointer' }}>
-          <span className="logo-icon">💠</span>
-          <span className="logo-text">Suite Portal</span>
+          <span className="material-icons" style={{ color: 'var(--primary)' }}>shopping_basket</span>
+          <span className="logo-text">Market Super</span>
         </div>
         <div className="sidebar-app-name">
-           <span className="logo-icon">🛒</span>
-           <span className="logo-text">Supermarket</span>
+          <span className="material-icons">storefront</span>
+          <span>Gestión Super</span>
         </div>
-        <ul className="nav-links">
-          <li className="active"><span className="nav-icon">🍎</span> <span className="nav-text">Secciones</span></li>
-          <li><span className="nav-icon">🥫</span> <span className="nav-text">Almacén</span></li>
-          <li><span className="nav-icon">🧾</span> <span className="nav-text">Cajas</span></li>
-          <li><span className="nav-icon">📊</span> <span className="nav-text">Reportes</span></li>
-        </ul>
-      </nav>
+        <nav className="nav-links">
+          <li className="active">
+            <span className="material-icons nav-icon">inventory_2</span>
+            <span className="nav-text">Productos</span>
+          </li>
+          <li>
+            <span className="material-icons nav-icon">receipt_long</span>
+            <span className="nav-text">Ventas</span>
+          </li>
+          <li onClick={onBack}>
+            <span className="material-icons nav-icon">arrow_back</span>
+            <span className="nav-text">Portal</span>
+          </li>
+        </nav>
+      </aside>
+
       <main className="main-content">
         <header className="view-header">
           <h1>Gestión de Supermercado</h1>
-          <p>Control inteligente de abastecimiento y ventas directas.</p>
+          <p>Control inteligente de abastecimiento y retail.</p>
         </header>
-        <div className="empty-msg">
-          <div style={{ fontSize: '5rem', marginBottom: '1.5rem', filter: 'drop-shadow(0 0 20px rgba(16, 185, 129, 0.4))' }}>🏪</div>
-          <h2 style={{ color: '#fff', fontSize: '2rem' }}>Módulo en Construcción</h2>
-          <p style={{ fontSize: '1.1rem' }}>Preparando el motor de búsqueda y escaneo de productos.</p>
+        <div className="portal-card" style={{ padding: '5rem', textAlign: 'center', cursor: 'default' }}>
+          <span className="material-icons" style={{ fontSize: '8rem', color: 'var(--border-main)', marginBottom: '2rem' }}>construction</span>
+          <h2>Módulo en Desarrollo</h2>
+          <p>Estamos adaptando las herramientas de inventario al nuevo sistema Stitch.</p>
         </div>
       </main>
     </div>
   )
 }
-export default MarketSuper
+export default MarketSuper;
